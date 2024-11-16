@@ -1,0 +1,11 @@
+rules:
+  high_value_threshold: 500000
+  high_risk_threshold: 0.7
+  transaction_frequency_limit: 100
+  suspicious_patterns:
+    - pattern: "multiple_small_transactions"
+      threshold: 10
+      timeframe_minutes: 60
+    - pattern: "circular_transactions"
+      depth: 3
+      timeframe_minutes: 120
